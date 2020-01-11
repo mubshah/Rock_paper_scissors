@@ -26,7 +26,7 @@
              else if(playerSelection=='paper'&&computerSelection=='rock'){ alert("You Win! Paper beats Rock");return "You Win! Paper beats Rock";}
              else if(playerSelection=='paper'&&computerSelection=='paper'){ alert("It's a tie");return "It's a tie";}
 
-             if(playerSelection=='scissors'&&computerSelection=='rock'){ alert( "You Lose! Rock beats Scissors");return "You Lose! Rock beats Scissors"}
+             if(playerSelection=='scissors'&&computerSelection=='rock'){ alert( "You Lose! Rock beats Scissors");return "You Lose! Rock beats Scissors";}
              else if(playerSelection=='scissors'&&computerSelection=='paper'){ alert("You Win! Scissors beats Paper");return "You Win! Scissors beats Paper";}
              else if(playerSelection=='scissors'&&computerSelection=='scissors'){alert("It's a tie");return "It's a tie";}
     }
@@ -36,7 +36,7 @@
     {
        
         var playerSelection = prompt("Enter your Selection and press f12 to see results");
-       playerSelection= playerSelection.toLowerCase();
+        playerSelection= playerSelection.toLowerCase();
         var computerSelection = computerPlay();
         return playRound( playerSelection,computerPlay());
     
