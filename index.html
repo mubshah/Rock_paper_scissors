@@ -14,22 +14,23 @@
         else if(a==1){return 'paper';}
         else if(a==2){return 'scissors';}
     }
-    function playRound(playerSelection,computerSelection){
+     function playRound(playerSelection,computerSelection){
             if(playerSelection=='rock'&&computerSelection=='paper'){
                 
                 return "You Lose! Paper beats Rock";
             }
-            else if(playerSelection=='rock'&&computerSelection=='scissors'){ return "You Win! Rock beats Scissors";}
-            else if(playerSelection=='rock'&&computerSelection=='rock'){ return "It's a tie";}
+            else if(playerSelection=='rock'&&computerSelection=='scissors'){ alert("You Win! Rock beats Scissors");return "You Win! Rock beats Scissors";}
+            else if(playerSelection=='rock'&&computerSelection=='rock'){alert("It's a tie"); return "It's a tie";}
 
-             if(playerSelection=='paper'&&computerSelection=='scissors'){ return "You Lose! Scissors beats Paper";}
-             else if(playerSelection=='paper'&&computerSelection=='rock'){ return "You Win! Paper beats Rock";}
-             else if(playerSelection=='paper'&&computerSelection=='paper'){ return "It's a tie";}
+             if(playerSelection=='paper'&&computerSelection=='scissors'){ alert("You Lose! Scissors beats Paper");return "You Lose! Scissors beats Paper";}
+             else if(playerSelection=='paper'&&computerSelection=='rock'){ alert("You Win! Paper beats Rock");return "You Win! Paper beats Rock";}
+             else if(playerSelection=='paper'&&computerSelection=='paper'){ alert("It's a tie");return "It's a tie";}
 
-             if(playerSelection=='scissors'&&computerSelection=='rock'){ return "You Lose! Rock beats Scissors"}
-             else if(playerSelection=='scissors'&&computerSelection=='paper'){ return "You Win! Scissors beats Paper";}
-             else if(playerSelection=='scissors'&&computerSelection=='scissors'){return "It's a tie";}
+             if(playerSelection=='scissors'&&computerSelection=='rock'){ alert( "You Lose! Rock beats Scissors");return "You Lose! Rock beats Scissors"}
+             else if(playerSelection=='scissors'&&computerSelection=='paper'){ alert("You Win! Scissors beats Paper");return "You Win! Scissors beats Paper";}
+             else if(playerSelection=='scissors'&&computerSelection=='scissors'){alert("It's a tie");return "It's a tie";}
     }
+    
     
     function game()
     {
